@@ -46,6 +46,7 @@ public class MAIN {
 									extraPrice+=typeACar.getGps();
 							}
 						}
+						System.out.println("Extra services have been added to your vehicle.");
 						rentPrice+=extraPrice;
 						extraPrice=0;
 					}//Extra Services Block End
@@ -75,6 +76,7 @@ public class MAIN {
 									extraPrice+=typeBCar.getGps();
 							}
 						}
+						System.out.println("Extra services have been added to your vehicle.");
 						rentPrice+=extraPrice;
 						extraPrice=0;
 					}
@@ -104,6 +106,7 @@ public class MAIN {
 									extraPrice+=typeCCar.getGps();
 							}
 						}
+						System.out.println("Extra services have been added to your vehicle.");
 						rentPrice+=extraPrice;
 						extraPrice=0;
 					}
@@ -133,6 +136,7 @@ public class MAIN {
 									extraPrice+=typeDCar.getGps();
 							}
 						}
+						System.out.println("Extra services have been added to your vehicle.");
 						rentPrice+=extraPrice;
 						extraPrice=0;
 					}
@@ -142,9 +146,9 @@ public class MAIN {
 				if(accept==1) {
 					System.out.println("Congratulations, You have successfully selected your vehicle.");
 					System.out.println("Total Payment Amount: "+ rentPrice );
-					System.out.println("Would you like to know how much this trip cost you in total ?(0 for No 1 for Yes)");
-					int finalSelection = scanner.nextInt();
-					if(finalSelection == 1) {
+					System.out.println("Would you like to know how much this trip cost you in total ?('N' for No 'Y' for Yes)");
+					char finalSelection = scanner.next().charAt(0);
+					if(finalSelection == 'Y') {
 						System.out.println("Please enter your road distance in KM :");
 						float distance = scanner.nextFloat();
 						float totalBill = totalPayment(carModel, distance, (float)rentPrice);
@@ -188,6 +192,7 @@ public class MAIN {
 									extraPrice+=typeACar.getGps();
 							}
 						}
+						System.out.println("Extra services have been added to your vehicle.");
 						rentPrice+=extraPrice;
 						extraPrice=0;
 					}//Extra Services Block End
@@ -222,6 +227,7 @@ public class MAIN {
 										extraPrice+=typeDCar.getGps();
 								}
 							}
+							System.out.println("Extra services have been added to your vehicle.");
 							rentPrice+=extraPrice;
 							extraPrice=0;
 						}//Extra Services Block End
@@ -256,6 +262,7 @@ public class MAIN {
 											extraPrice+=typeCCar.getGps();
 									}
 								}
+								System.out.println("Extra services have been added to your vehicle.");
 								rentPrice+=extraPrice;
 								extraPrice=0;
 							}//Extra Services Block End
@@ -287,6 +294,7 @@ public class MAIN {
 											extraPrice+=typeBCar.getGps();
 									}
 								}
+								System.out.println("Extra services have been added to your vehicle.");
 								rentPrice+=extraPrice;
 								extraPrice=0;
 							}//Extra Services Block End
@@ -298,9 +306,9 @@ public class MAIN {
 				if(accept==1) {
 					System.out.println("Congratulations, You have successfully selected your vehicle.");
 					System.out.println("Total Payment Amount: "+ rentPrice );
-					System.out.println("Would you like to know how much this trip cost you in total ?(0 for No 1 for Yes)");
-					int finalSelection = scanner.nextInt();
-					if(finalSelection == 1) {
+					System.out.println("Would you like to know how much this trip cost you in total ?('N' for No 'Y' for Yes)");
+					char finalSelection = scanner.next().charAt(0);
+					if(finalSelection == 'Y') {
 						System.out.println("Please enter your road distance in KM :");
 						float distance = scanner.nextFloat();
 						float totalBill = totalPayment(selectedCar, distance, (float)rentPrice);
