@@ -42,10 +42,10 @@ interface ExServices{
 
 class TYPEA extends CAR implements ExServices{
 	//Car Features.
-	boolean automatic=false,eco=false,offRoad=false,snow=false,sport=false,cruiseControl=false,autoDrive=false;
+	/*boolean automatic=false,eco=false,offRoad=false,snow=false,sport=false,cruiseControl=false,autoDrive=false;
 	String fuelType="Diesel";
 	String carModel="Fluence";
-	int seatCapacity=5,traction=8;
+	int seatCapacity=5,traction=8;*/
 	
 	//Constructor that Include Parent Class Constructor.
 	public TYPEA( ) {super('A');}
@@ -112,10 +112,10 @@ class TYPEA extends CAR implements ExServices{
 }
 
 class TYPEB extends CAR implements ExServices {
-	boolean automatic=true,eco=true,offRoad=false,snow=false,sport=false,cruiseControl=false,autoDrive=false;
+	/*boolean automatic=true,eco=true,offRoad=false,snow=false,sport=false,cruiseControl=false,autoDrive=false;
 	String fuelType="Petrol";
 	String carModel="Toyota Corolla";
-	int seatCapacity=5,traction=8;
+	int seatCapacity=5,traction=8;*/
 	
 	public TYPEB() {super('B');}
 	public TYPEB(String selectedCar) {System.out.println("Total Bill is Calculating...");}
@@ -180,10 +180,10 @@ class TYPEB extends CAR implements ExServices {
 }
 
 class TYPEC extends CAR implements ExServices{
-	boolean automatic=true,eco=false,offRoad=true,snow=true,sport=false,cruiseControl=true,autoDrive=false;
+	/*boolean automatic=true,eco=false,offRoad=true,snow=true,sport=false,cruiseControl=true,autoDrive=false;
 	String fuelType="Petrol";
 	String carModel="Ford Ranger";
-	int seatCapacity=5,traction=16;
+	int seatCapacity=5,traction=16;*/
 	
 	public TYPEC() {super('C');}
 	public TYPEC(String selectedCar) {System.out.println("Total Bill is Calculating...");}
@@ -247,10 +247,10 @@ class TYPEC extends CAR implements ExServices{
 }
 
 class TYPED extends CAR implements ExServices{
-	boolean automatic=true,eco=false,offRoad=false,snow=false,sport=true,cruiseControl=true,autoDrive=true;
+	/*boolean automatic=true,eco=false,offRoad=false,snow=false,sport=true,cruiseControl=true,autoDrive=true;
 	String fuelType="Electric";
 	String carModel="Tesla Model 3";
-	int seatCapacity=2,traction=16;
+	int seatCapacity=2,traction=16;*/
 	
 	public TYPED() {super('D');}
 	public TYPED(String selectedCar) {System.out.println("Total Bill is Calculating...");}
